@@ -1,0 +1,21 @@
+<div class="form">
+
+    <h1 class="title2">New book</h1>
+    <%= form_with model: Book.new do |form| %>
+      
+      <div class="table">
+        <%= form.text_field :title %>
+      </div>
+    
+      <div class="table">
+       <%= form.text_field :body %>
+      </div>
+    
+      <div>
+        <%= form.submit %>
+      </div>
+    <% end %>
+
+</div>
+
+
